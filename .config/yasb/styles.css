@@ -205,6 +205,38 @@
 }
 
 /* =============================================================================
+   AUDIO & MEDIA WIDGETS
+   ============================================================================= */
+
+/* Volume slider styling */
+.volume-slider {
+    border: none;
+}
+
+/* Audio menu container */
+.audio-menu {
+    background-color: rgba(17, 17, 27, 0.4);
+}
+
+/* Audio device selection */
+.audio-container .device {
+    background-color: transparent;
+    border: none;
+    padding: 6px 8px 6px 4px;
+    margin: 2px 0;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.audio-container .device.selected {
+    background-color: rgba(255, 255, 255, 0.085);
+}
+
+.audio-container .device:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* =============================================================================
    WIDGET ICONS
    ============================================================================= */
 
