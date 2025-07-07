@@ -20,9 +20,6 @@ if ([bool]([System.Security.Principal.WindowsIdentity]::GetCurrent()).IsSystem) 
 #------------------------------------------------------------------------------
 
 # Ensure Terminal-Icons module is installed before importing
-if (-not (Get-Module -ListAvailable -Name Terminal-Icons)) {
-    Install-Module -Name Terminal-Icons -Scope CurrentUser -Force -SkipPublisherCheck
-}
 Import-Module -Name Terminal-Icons
 
 # Import Chocolatey profile if available
@@ -63,11 +60,12 @@ function Test-CommandExists {
 #------------------------------------------------------------------------------
 
 # Set preferred editor based on availability
-$EDITOR = if (Test-CommandExists nvim) { 'nvim' }
-          elseif (Test-CommandExists vim) { 'vim' }
-          elseif (Test-CommandExists code) { 'code' }
-          elseif (Test-CommandExists sublime_text) { 'sublime_text' }
-          else { 'notepad' }
+# $EDITOR = if (Test-CommandExists nvim) { 'nvim' }
+#           elseif (Test-CommandExists vim) { 'vim' }
+#           elseif (Test-CommandExists code) { 'code' }
+#           elseif (Test-CommandExists sublime_text) { 'sublime_text' }
+#           else { 'notepad' }
+$EDITOR = "code"
 Set-Alias -Name vim -Value $EDITOR
 
 # Quick access to editing the profile
@@ -258,21 +256,21 @@ function Clear-Cache {
 
 # Start Komorebi with components
 function start-komorebi {
-    komorebic start --whkd --bar
+    komorebic start --whkd
 }
 
 # Stop Komorebi with components
 function stop-komorebi {
-    komorebic stop --whkd --bar
+    komorebic stop --whkd
 }
 
 # Short aliases for Komorebi
 function startk {
-    komorebic start --whkd --bar
+    komorebic start --whkd
 }
 
 function stopk {
-    komorebic stop --whkd --bar
+    komorebic stop --whkd
 }
 
 #------------------------------------------------------------------------------
@@ -527,19 +525,8 @@ oh-my-posh init pwsh | Invoke-Expression
 # Zoxide Integration (Smart Directory Navigation)
 #------------------------------------------------------------------------------
 
-# Initialize zoxide for smart directory navigation
-if (Get-Command zoxide -ErrorAction SilentlyContinue) {
-    Invoke-Expression (& { (zoxide init --cmd cd powershell | Out-String) })
-} else {
-    Write-Host "zoxide command not found. Attempting to install via winget..."
-    try {
-        winget install -e --id ajeetdsouza.zoxide
-        Write-Host "zoxide installed successfully. Initializing..."
-        Invoke-Expression (& { (zoxide init powershell | Out-String) })
-    } catch {
-        Write-Error "Failed to install zoxide. Error: $_"
-    }
-}
+# Initialize zoxide
+Invoke-Expression (& { (zoxide init --cmd cd powershell | Out-String) })
 
 # Set zoxide aliases
 Set-Alias -Name z -Value __zoxide_z -Option AllScope -Scope Global -Force
