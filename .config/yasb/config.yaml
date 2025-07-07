@@ -12,7 +12,7 @@ watch_config: true
 # Window manager integration settings
 # Remove this section if you don't use komorebi
 komorebi:
-  start_command: "komorebic start --whkd"
+  start_command: "komorebic start --whkd --config $HOME/.config/komorebi/komorebi.json"
   stop_command: "komorebic stop --whkd"
   reload_command: "komorebic reload-configuration"
 
