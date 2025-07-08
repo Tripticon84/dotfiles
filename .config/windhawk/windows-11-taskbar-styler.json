@@ -1,0 +1,12 @@
+{
+  "theme": "DockLike",
+  "controlStyles[0].target": "Taskbar.TaskbarFrame > Grid#RootGrid",
+  "controlStyles[0].styles[0]": "Margin=0,1,0,3",
+  "controlStyles[0].styles[1]": "CornerRadius=8",
+  "controlStyles[1].styles[0]": "Margin=8,1,8,3",
+  "controlStyles[1].target": "Grid#SystemTrayFrameGrid",
+  "controlStyles[0].styles[2]": "BorderThickness=1",
+  "controlStyles[1].styles[1]": "BorderThickness=1",
+  "controlStyles[1].styles[2]": "BorderBrush:=<SolidColorBrush Color=\"{ThemeResource SurfaceStrokeColorDefault}\" />",
+  "controlStyles[0].styles[3]": "BorderBrush:=<SolidColorBrush Color=\"{ThemeResource SurfaceStrokeColorDefault}\" />"
+}

@@ -1,0 +1,14 @@
+{
+  "controlStyles[0].target": "Grid#NotificationCenterGrid",
+  "controlStyles[0].styles[0]": "CornerRadius=12",
+  "controlStyles[1].target": "Grid#CalendarCenterGrid",
+  "controlStyles[1].styles[0]": "CornerRadius=12",
+  "controlStyles[2].target": "Grid#ControlCenterRegion",
+  "controlStyles[2].styles[0]": "CornerRadius=12",
+  "controlStyles[3].target": "Grid#MediaTransportControlsRegion",
+  "controlStyles[3].styles[0]": "CornerRadius=12",
+  "controlStyles[4].target": "MenuFlyoutPresenter",
+  "controlStyles[4].styles[0]": "CornerRadius=12",
+  "controlStyles[5].target": "Border#JumpListRestyledAcrylic",
+  "controlStyles[5].styles[0]": "CornerRadius=12"
+}
