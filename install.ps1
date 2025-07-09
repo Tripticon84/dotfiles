@@ -303,8 +303,20 @@ if (-not (Test-Path -Path $dotfilesPath)) {
     Pop-Location
 }
 
-# Create symbolic links
-Write-Host "Creating symbolic links..." -ForegroundColor Blue
+# Copy existing config (if needed)
+if (Test-Path "$HOME\.config") {
+    Write-Host "Copying existing .config to dotfiles..." -ForegroundColor Yellow
+    Copy-Item -Path "$HOME\.config\*" -Destination "$HOME\.dotfiles\.config" -Recurse
+}
+
+# Remove the old config folder
+if (Test-Path "$HOME\.config") {
+    Write-Host "Removing old .config directory..." -ForegroundColor Yellow
+    Remove-Item -Path "$HOME\.config" -Recurse -Force
+}
+
+# Create symbolic link
+Write-Host "Creating symbolic link for .config..." -ForegroundColor Blue
 New-Item -Path "$HOME\.config" -ItemType SymbolicLink -Value "$HOME\.dotfiles\.config" -Force
 
 #=====================================
