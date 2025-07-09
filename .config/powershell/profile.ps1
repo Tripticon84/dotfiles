@@ -165,8 +165,8 @@ function Get-PubIP { (Invoke-WebRequest http://ifconfig.me/ip).Content }
 
 # Flush DNS cache
 function flushdns {
-	Clear-DnsClientCache
-	Write-Host "DNS has been flushed"
+    Clear-DnsClientCache
+    Write-Host "DNS has been flushed"
 }
 
 #------------------------------------------------------------------------------
@@ -635,10 +635,8 @@ Use '$($PSStyle.Foreground.Magenta)Show-Help$($PSStyle.Reset)' to display this h
 $Env:KOMOREBI_CONFIG_HOME = "$HOME\.config\komorebi"
 
 # Add KOMOREBI_CONFIG_HOME to permanent user environment variables
-Write-Host "Adding KOMOREBI_CONFIG_HOME to user environment variables..." -ForegroundColor Yellow
 try {
     [Environment]::SetEnvironmentVariable("KOMOREBI_CONFIG_HOME", "$HOME\.config\komorebi", "User")
-    Write-Host "KOMOREBI_CONFIG_HOME environment variable set permanently." -ForegroundColor Green
 } catch {
     Write-Warning "Failed to set KOMOREBI_CONFIG_HOME environment variable: $_"
     Write-Host "Please manually add KOMOREBI_CONFIG_HOME=$HOME\.config\komorebi to your user environment variables." -ForegroundColor Yellow
