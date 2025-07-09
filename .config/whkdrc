@@ -7,7 +7,7 @@ win + shift + o         : komorebic reload-configuration
 
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
-# alt + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
+win + f                 : if ($wshell.AppActivate('Zen Browser') -eq $False) { start zen }
 # alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
 win + return               : if ($wshell.AppActivate('Windows Terminal') -eq $False) { Start-Process "wt.exe" }
 
