@@ -113,8 +113,8 @@ A curated collection of Windhawk modules to enhance the Windows experience:
 Run the following command in an **Administrator PowerShell** session:
 
 ```powershell
-    Set-ExecutionPolicy Bypass -Scope Process -Force;
-    irm "https://raw.githubusercontent.com/Tripticon84/dotfiles/main/install.ps1" | iex
+ Set-ExecutionPolicy Bypass -Scope Process -Force;
+ irm "https://raw.githubusercontent.com/Tripticon84/dotfiles/main/install.ps1" | iex
 ```
 
 ### Manual Installation
@@ -209,7 +209,6 @@ Run the following command in an **Administrator PowerShell** session:
 
 - Install Nerd Fonts: CascadiaCode and JetBrainsMono
 - Restart terminal applications
-
 
 ## Inspirations
 
