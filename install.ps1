@@ -182,7 +182,7 @@ if ($PSVersionTable.PSEdition -ne 'Core') {
 
     # Restart script in PowerShell 7
     try {
-        $arguments = @("-NoExit", "-File", "`"$PSCommandPath`"")
+        $arguments = @("-NoExit", "-Command", "& { irm 'https://raw.githubusercontent.com/Tripticon84/dotfiles/main/install.ps1' | iex }")
         Start-Process -FilePath "pwsh.exe" -ArgumentList $arguments -Verb RunAs
         exit
     }
