@@ -175,7 +175,7 @@ irm "https://raw.githubusercontent.com/Tripticon84/dotfiles/main/install.ps1" | 
 
 **Komorebi not starting**:
 
-- Ensure KOMOREBI_CONFIG_HOME environment variable is set
+- Ensure `KOMOREBI_CONFIG_HOME` environment variable is set
 
 **PowerShell profile not loading**:
 
