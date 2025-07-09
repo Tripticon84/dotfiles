@@ -11,7 +11,6 @@ Welcome to my Windows dotfiles repository! This collection provides a complete d
 - [Windhawk Modules](#windhawk-modules)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Customization](#customization)
 - [Troubleshooting](#troubleshooting)
 - [Inspirations](#inspirations)
 
@@ -169,23 +168,6 @@ irm "https://raw.githubusercontent.com/Tripticon84/dotfiles/main/install.ps1" | 
 - **Left side**: Workspaces, active window title
 - **Center**: Clock and wheather information
 - **Right side**: Music, System monitoring, network, power menu
-
-## Customization
-
-### Modifying Configurations
-
-1. **Terminal appearance**: Edit [`.config/windows-terminal/settings.json`](.config/windows-terminal/settings.json)
-2. **PowerShell behavior**: Modify [`.config/powershell/profile.ps1`](.config/powershell/profile.ps1)
-3. **Window management**: Update [`.config/komorebi/komorebi.json`](.config/komorebi/komorebi.json)
-4. **Hotkeys**: Edit [`.config/whkdrc`](.config/whkdrc)
-5. **Status bar**: Customize [`.config/yasb/config.yaml`](.config/yasb/config.yaml) and [`.config/yasb/styles.css`](.config/yasb/styles.css)
-
-### Adding New Features
-
-1. **PowerShell functions**: Add to [`.config/powershell/profile.ps1`](.config/powershell/profile.ps1)
-2. **Status bar widgets**: Configure in [`.config/yasb/config.yaml`](.config/yasb/config.yaml)
-3. **Window rules**: Define in [`.config/komorebi/komorebi.json`](.config/komorebi/komorebi.json)
-4. **Custom hotkeys**: Specify in [`.config/whkdrc`](.config/whkdrc)
 
 ## Troubleshooting
 
