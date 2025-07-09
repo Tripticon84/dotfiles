@@ -113,8 +113,8 @@ A curated collection of Windhawk modules to enhance the Windows experience:
 Run the following command in an **Administrator PowerShell** session:
 
 ```powershell
- Set-ExecutionPolicy Bypass -Scope Process -Force;
- irm "https://raw.githubusercontent.com/Tripticon84/dotfiles/main/install.ps1" | iex
+Set-ExecutionPolicy Bypass -Scope Process -Force;
+irm "https://raw.githubusercontent.com/Tripticon84/dotfiles/main/install.ps1" | iex
 ```
 
 ### Manual Installation
@@ -128,14 +128,14 @@ Run the following command in an **Administrator PowerShell** session:
 2. **Create symbolic links**:
 
    ```powershell
-    # Copy existing config (if needed)
-    Copy-Item -Path "$HOME\.config\*" -Destination "$HOME\.dotfiles\.config" -Recurse
+   # Copy existing config (if needed)
+   Copy-Item -Path "$HOME\.config\*" -Destination "$HOME\.dotfiles\.config" -Recurse
 
-    # Remove the old config folder
-    Remove-Item -Path "$HOME\.config" -Recurse -Force
+   # Remove the old config folder
+   Remove-Item -Path "$HOME\.config" -Recurse -Force
 
-    # Create the symbolic link
-    New-Item -Path "$HOME\.config" -ItemType SymbolicLink -Value "$HOME\.dotfiles\.config"
+   # Create the symbolic link
+   New-Item -Path "$HOME\.config" -ItemType SymbolicLink -Value "$HOME\.dotfiles\.config"
    ```
 
 3. **Install required software** using the package managers or manual downloads
