@@ -27,12 +27,12 @@
    ============================================================================= */
 
 * {
-	font-size: 13px;
-	color: #cdd6f4;
-	font-weight: 500;
-	font-family: "JetBrainsMono NFP";
-	margin: 0;
-	padding: 0;
+  font-size: 13px;
+  color: #cdd6f4;
+  font-weight: 500;
+  font-family: "JetBrainsMono NFP";
+  margin: 0;
+  padding: 0;
 }
 
 /* =============================================================================
@@ -40,19 +40,19 @@
    ============================================================================= */
 
 .yasb-bar {
-	padding: 0 8px;
-	margin: 0;
-    background-color: rgba(30, 30, 46, 0.6);
-    border: 1px solid rgba(53, 59, 69, 0.4);
+  padding: 0 8px;
+  margin: 0;
+  background-color: rgba(30, 30, 46, 0.6);
+  border: 1px solid rgba(53, 59, 69, 0.4);
 }
 
 .widget {
-	padding: 0 8px;
-	margin: 0;
+  padding: 0 8px;
+  margin: 0;
 }
 
 .widget .label {
-	padding: 0px 1px 1px 1px;
+  padding: 0px 1px 1px 1px;
 }
 
 /* =============================================================================
@@ -60,32 +60,32 @@
    ============================================================================= */
 
 .komorebi-active-layout .label {
-	font-weight: 600;
-	padding: 2px 0 0 0;
+  font-weight: 600;
+  padding: 2px 0 0 0;
 }
 
 .komorebi-workspaces .widget-container {
-    background-color: rgba(188, 195, 207, 0.178);
-    margin: 4px 0;
-    border-radius: 12px;
+  background-color: rgba(188, 195, 207, 0.178);
+  margin: 4px 0;
+  border-radius: 12px;
 }
 
 .komorebi-workspaces .ws-btn {
-	font-size: 14px;
-    background-color: transparent;
-	margin: 0 8px 0 8px;
-	color: #95a0ad;
-    padding: 0;
+  font-size: 14px;
+  background-color: transparent;
+  margin: 0 8px 0 8px;
+  color: #95a0ad;
+  padding: 0;
 }
 
 .komorebi-workspaces .ws-btn.populated {
-	color: #a0c3ee;
+  color: #a0c3ee;
 }
 
 .komorebi-workspaces .ws-btn:hover,
 .komorebi-workspaces .ws-btn.populated:hover,
 .komorebi-workspaces .ws-btn.active {
-	color: #c2daf7;
+  color: #c2daf7;
 }
 
 /* =============================================================================
@@ -94,74 +94,74 @@
 
 /* Power menu button */
 .power-menu-widget .label {
-	color: #f38ba8;
-	font-size: 13px;
+  color: #f38ba8;
+  font-size: 13px;
 }
 
 /* Power menu popup container */
 .power-menu-popup {
-	background-color: rgba(24, 24, 37, 0.9);
-	border-radius: 12px;
-	border: 4px solid rgb(41, 42, 58);
+  background-color: rgba(24, 24, 37, 0.9);
+  border-radius: 12px;
+  border: 4px solid rgb(41, 42, 58);
 }
 
 /* Uptime display */
 .uptime {
-	font-size: 14px;
-	margin-bottom: 10px;
-	color: #ffffff;
-	font-weight: 600;
-	font-family: "Segoe UI";
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Segoe UI";
 }
 
 /* Power menu buttons */
 .power-menu-popup .button {
-	padding: 0;
-	width: 240px;
-	height: 120px;
-	border-radius: 8px;
-	background-color: rgb(41, 42, 58);
-	font-family: "Segoe UI";
-	color: white;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	margin: 8px;
+  padding: 0;
+  width: 240px;
+  height: 120px;
+  border-radius: 8px;
+  background-color: rgb(41, 42, 58);
+  font-family: "Segoe UI";
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 8px;
 }
 
 .power-menu-popup .button.hover {
-	background-color: rgb(55, 56, 75);
-	border: 1px solid rgb(55, 56, 75);
+  background-color: rgb(55, 56, 75);
+  border: 1px solid rgb(55, 56, 75);
 }
 
 .power-menu-popup .button .label {
-	margin-bottom: 8px;
-	font-size: 16px;
-	font-weight: 600;
-	color: rgba(255, 255, 255, 0.95);
-	font-family: "Segoe UI";
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: "Segoe UI";
 }
 
 .power-menu-popup .button .icon {
-	font-size: 48px;
-	padding-top: 8px;
-	color: rgba(255, 255, 255, 0.25);
+  font-size: 48px;
+  padding-top: 8px;
+  color: rgba(255, 255, 255, 0.25);
 }
 
 /* Cancel button styling */
 .power-menu-popup .button.cancel .icon {
-	color: rgba(243, 139, 168, 0.55);
+  color: rgba(243, 139, 168, 0.55);
 }
 
 .power-menu-popup .button.cancel .label {
-	color: rgba(243, 139, 168, 0.95);
+  color: rgba(243, 139, 168, 0.95);
 }
 
 /* Shutdown button styling */
 .power-menu-popup .button.shutdown .icon {
-	color: rgba(137, 180, 250, 0.55);
+  color: rgba(137, 180, 250, 0.55);
 }
 
 .power-menu-popup .button.shutdown .label {
-	color: rgba(137, 180, 250, 0.95);
+  color: rgba(137, 180, 250, 0.95);
 }
 
 /* =============================================================================
@@ -169,39 +169,39 @@
    ============================================================================= */
 
 .media-widget {
-	padding: 0;
-	padding-left: 2px;
-	margin: 0;
-	border-radius: 16px;
-	margin-right: 8px;
+  padding: 0;
+  padding-left: 2px;
+  margin: 0;
+  border-radius: 16px;
+  margin-right: 8px;
 }
 
 .media-widget .label {
-	background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .media-widget .btn {
-	color: #acb2c9;
-	padding: 0 3px;
-	margin: 4px 0;
-	font-family: Segoe Fluent Icons;
+  color: #acb2c9;
+  padding: 0 3px;
+  margin: 4px 0;
+  font-family: Segoe Fluent Icons;
 }
 
 .media-widget .btn:hover {
-	color: #89b4fa;
+  color: #89b4fa;
 }
 
 .media-widget .btn.play {
-	background-color: rgba(188, 195, 207, 0.178);
-	border-radius: 12px;
-	font-size: 14px;
+  background-color: rgba(188, 195, 207, 0.178);
+  border-radius: 12px;
+  font-size: 14px;
 }
 
 .media-widget .btn.disabled:hover,
 .media-widget .btn.disabled {
-	color: #4e525c;
-	font-size: 12px;
-	background-color: rgba(0, 0, 0, 0);
+  color: #4e525c;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* =============================================================================
@@ -210,30 +210,30 @@
 
 /* Volume slider styling */
 .volume-slider {
-    border: none;
+  border: none;
 }
 
 /* Audio menu container */
 .audio-menu {
-    background-color: rgba(17, 17, 27, 0.4);
+  background-color: rgba(17, 17, 27, 0.4);
 }
 
 /* Audio device selection */
 .audio-container .device {
-    background-color: transparent;
-    border: none;
-    padding: 6px 8px 6px 4px;
-    margin: 2px 0;
-    font-size: 12px;
-    border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  padding: 6px 8px 6px 4px;
+  margin: 2px 0;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
 .audio-container .device.selected {
-    background-color: rgba(255, 255, 255, 0.085);
+  background-color: rgba(255, 255, 255, 0.085);
 }
 
 .audio-container .device:hover {
-    background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 /* =============================================================================
@@ -241,7 +241,7 @@
    ============================================================================= */
 
 .icon {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 /* System monitoring icons */
@@ -250,44 +250,44 @@
 .volume-widget .icon,
 .weather-widget .icon,
 .wifi-widget .icon {
-	margin: 0 4px 1px 0;
+  margin: 0 4px 1px 0;
 }
 
 .cpu-widget .icon {
-	font-size: 14px;
-	color: #cba6f7;
+  font-size: 14px;
+  color: #cba6f7;
 }
 
 .memory-widget .icon {
-	font-size: 14px;
-	color: #a6c9f7;
+  font-size: 14px;
+  color: #a6c9f7;
 }
 
 .volume-widget .icon {
-	color: #89b4fa;
+  color: #89b4fa;
 }
 
 .wifi-widget .icon {
-    font-size: 14px;
-	color: #43d8d8;
+  font-size: 14px;
+  color: #43d8d8;
 }
 
 /* Weather icons */
 .weather-widget .icon.sunnyDay {
-	color: rgb(221, 210, 107);
+  color: rgb(221, 210, 107);
 }
 
 .weather-widget .icon.clearNight {
-	color: rgb(107, 189, 221);
-	font-size: 22px;
-	margin: 1px 2px 0px 0;
+  color: rgb(107, 189, 221);
+  font-size: 22px;
+  margin: 1px 2px 0px 0;
 }
 
 /* GPU icon */
 .gpu-icon {
-	color: lightgreen;
-	font-size: 22px;
-	margin-right: 5px;
+  color: lightgreen;
+  font-size: 22px;
+  margin-right: 5px;
 }
 
 /* =============================================================================
@@ -295,147 +295,147 @@
    ============================================================================= */
 
 .traffic-menu {
-    background-color: rgba(24, 25, 27, 0.85);
-    min-width: 280px;
+  background-color: rgba(24, 25, 27, 0.85);
+  min-width: 280px;
 }
 
 /* Traffic menu header */
 .traffic-menu .header {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgba(24, 25, 27, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(24, 25, 27, 0.8);
 }
 
 .traffic-menu .header .title {
-    padding: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Segoe UI';
-    color: #ffffff
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Segoe UI";
+  color: #ffffff;
 }
 
 .traffic-menu .header .reset-button {
-    font-size: 11px;
-    padding: 4px 8px;
-    margin-right: 8px;
-    font-family: 'Segoe UI';
-    border-radius: 4px;
-    font-weight: 600;
-    background-color: transparent;
-    border: none;
+  font-size: 11px;
+  padding: 4px 8px;
+  margin-right: 8px;
+  font-family: "Segoe UI";
+  border-radius: 4px;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
 }
 
 .traffic-menu .reset-button:hover {
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .traffic-menu .reset-button:pressed {
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Speed indicators */
 .traffic-menu .download-speed,
 .traffic-menu .upload-speed {
-    background-color: transparent;
-    padding: 4px 10px;
-    margin-right: 12px;
-    margin-left: 12px;
-    margin-top: 16px;
-    margin-bottom: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  padding: 4px 10px;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-top: 16px;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .traffic-menu .download-speed {
-    margin-left: 12px;
-    margin-right: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .traffic-menu .speed-separator {
-    max-width: 1px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 32px 0 16px 0;
+  max-width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 32px 0 16px 0;
 }
 
 .traffic-menu .upload-speed-value,
 .traffic-menu .download-speed-value {
-    font-size: 24px;
-    font-weight: 900;
-    font-family: 'Segoe UI';
-    color: #bcc2c5;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Segoe UI";
+  color: #bcc2c5;
 }
 
 .traffic-menu .upload-speed-unit,
 .traffic-menu .download-speed-unit {
-    font-size: 13px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-    padding-top: 4px;
+  font-size: 13px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  padding-top: 4px;
 }
 
 .traffic-menu .upload-speed-placeholder,
 .traffic-menu .download-speed-placeholder {
-    color: #747474;
-    font-size: 11px;
-    font-family: 'Segoe UI';
-    padding: 0 0 4px 0;
+  color: #747474;
+  font-size: 11px;
+  font-family: "Segoe UI";
+  padding: 0 0 4px 0;
 }
 
 /* Traffic data sections */
 .traffic-menu .section-title {
-    font-size: 12px;
-    font-weight: 600;
-    color: #7c8192;
-    margin-bottom: 4px;
-    font-family: 'Segoe UI';
+  font-size: 12px;
+  font-weight: 600;
+  color: #7c8192;
+  margin-bottom: 4px;
+  font-family: "Segoe UI";
 }
 
 .traffic-menu .session-section,
 .traffic-menu .today-section,
 .traffic-menu .alltime-section {
-    margin: 8px 8px 0 8px;
-    padding: 0 10px 10px 10px;
-    background-color: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 8px 8px 0 8px;
+  padding: 0 10px 10px 10px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .traffic-menu .data-text {
-    font-size: 13px;
-    color: #afb5cc;
-    padding: 2px 0;
-    font-family: 'Segoe UI';
+  font-size: 13px;
+  color: #afb5cc;
+  padding: 2px 0;
+  font-family: "Segoe UI";
 }
 
 .traffic-menu .data-value {
-    font-weight: 600;
-    font-size: 13px;
-    font-family: 'Segoe UI';
-    padding: 2px 0;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: "Segoe UI";
+  padding: 2px 0;
 }
 
 /* Interface and connection info */
 .traffic-menu .interface-info,
 .traffic-menu .internet-info {
-    font-size: 12px;
-    color: #6f7486;
-    padding: 8px 0;
-    font-family: 'Segoe UI';
+  font-size: 12px;
+  color: #6f7486;
+  padding: 8px 0;
+  font-family: "Segoe UI";
 }
 
 .traffic-menu .internet-info {
-    background-color: rgba(68, 68, 68, 0.1);
+  background-color: rgba(68, 68, 68, 0.1);
 }
 
 .traffic-menu .internet-info.connected {
-    background-color: rgba(166, 227, 161, 0.096);
-    color: #a6e3a1;
+  background-color: rgba(166, 227, 161, 0.096);
+  color: #a6e3a1;
 }
 
 .traffic-menu .internet-info.disconnected {
-    background-color: rgba(243, 139, 168, 0.1);
-    color: #f38ba8;
+  background-color: rgba(243, 139, 168, 0.1);
+  color: #f38ba8;
 }
 
 /* =============================================================================
@@ -443,44 +443,44 @@
    ============================================================================= */
 
 .weather-card {
-    background-color: rgba(17, 17, 27, 0.5);
+  background-color: rgba(17, 17, 27, 0.5);
 }
 
 /* Today's weather card */
 .weather-card-today {
-    border: 1px solid #282936;
-    border-radius: 8px;
-    background-color: rgba(17, 17, 27, 0.2);
+  border: 1px solid #282936;
+  border-radius: 8px;
+  background-color: rgba(17, 17, 27, 0.2);
 }
 
 .weather-card-today .label {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .weather-card-today .label.location {
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .weather-card-today .label.alert {
-    font-size: 12px;
-    font-weight: 700;
-    background-color: rgba(247, 199, 42, 0.05);
-    border: 1px solid rgba(247, 209, 42, 0.1);
-    color: rgba(196, 181, 162, 0.85);
-    border-radius: 6px;
-    padding: 5px 0;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: rgba(247, 199, 42, 0.05);
+  border: 1px solid rgba(247, 209, 42, 0.1);
+  color: rgba(196, 181, 162, 0.85);
+  border-radius: 6px;
+  padding: 5px 0;
 }
 
 /* Daily weather forecast cards */
 .weather-card-day {
-    border: 1px solid #45475a;
-    border-radius: 8px;
-    background-color: rgba(17, 17, 27, 0.2);
+  border: 1px solid #45475a;
+  border-radius: 8px;
+  background-color: rgba(17, 17, 27, 0.2);
 }
 
 .weather-card-day .label {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 /* =============================================================================
@@ -488,48 +488,48 @@
    ============================================================================= */
 
 .calendar {
-    background-color: rgba(17, 17, 27, 0.4);
+  background-color: rgba(17, 17, 27, 0.4);
 }
 
 .calendar .calendar-table,
 .calendar .calendar-table::item {
-    background-color: rgba(17, 17, 27, 0);
-    color: rgba(162, 177, 196, 0.85);
-    font-family: 'Segoe UI';
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
+  background-color: rgba(17, 17, 27, 0);
+  color: rgba(162, 177, 196, 0.85);
+  font-family: "Segoe UI";
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
 }
 
 .calendar .calendar-table::item:selected {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .calendar .day-label {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .calendar .day-label,
 .calendar .month-label,
 .calendar .date-label {
-    font-family: 'Segoe UI';
-    font-size: 16px;
-    color: #fff;
-    font-weight: 700;
-    min-width: 180px;
-    max-width: 180px;
+  font-family: "Segoe UI";
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  min-width: 180px;
+  max-width: 180px;
 }
 
 .calendar .month-label {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .calendar .date-label {
-    font-size: 88px;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-    margin-top: -20px;
+  font-size: 88px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  margin-top: -20px;
 }
 
 /* =============================================================================
@@ -537,37 +537,37 @@
    ============================================================================= */
 
 .home-widget {
-    padding: 0 4px 0 12px;
+  padding: 0 4px 0 12px;
 }
 
 .home-widget .icon {
-    color: #b4befe;
+  color: #b4befe;
 }
 
 .home-widget .icon:hover {
-    color: #cdd6f4;
+  color: #cdd6f4;
 }
 
 .home-menu {
-    background-color: rgba(17, 17, 27, 0.5);
+  background-color: rgba(17, 17, 27, 0.5);
 }
 
 .home-menu .menu-item {
-    padding: 6px 48px 7px 16px;
-    font-size: 12px;
-    font-family: 'Segoe UI';
-    color: var(--text);
-    font-weight: 600;
+  padding: 6px 48px 7px 16px;
+  font-size: 12px;
+  font-family: "Segoe UI";
+  color: var(--text);
+  font-weight: 600;
 }
 
 .home-menu .menu-item:hover {
-    background-color: rgba(128, 130, 158, 0.15);
-    color: #fff;
+  background-color: rgba(128, 130, 158, 0.15);
+  color: #fff;
 }
 
 .home-menu .separator {
-    max-height: 1px;
-    background-color: rgba(128, 130, 158, 0.3);
+  max-height: 1px;
+  background-color: rgba(128, 130, 158, 0.3);
 }
 
 /* =============================================================================
@@ -575,87 +575,87 @@
    ============================================================================= */
 
 .whkd-widget {
-    padding: 0 6px 0 6px;
+  padding: 0 6px 0 6px;
 }
 
 .whkd-widget .icon {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 /* WHKD popup container and controls */
 .whkd-popup .edit-config-button {
-    background-color: #1743a1;
-    color: #ffffff;
-    padding: 4px 8px 6px 8px;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 4px;
-    font-family: 'Segoe UI', sans-serif;
+  background-color: #1743a1;
+  color: #ffffff;
+  padding: 4px 8px 6px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .whkd-popup .keybind-buttons-container {
-    min-width: 240px;
+  min-width: 240px;
 }
 
 /* Keybind button styling */
 .whkd-popup .keybind-button {
-    background-color: #343538;
-    color: white;
-    padding: 4px 8px 6px 8px;
-    font-size: 14px;
-    font-weight: 600;
-    border: 1px inset #4f5055;
-    border-bottom: 2px inset #4f5055;
-    border-radius: 4px;
-    font-family: 'JetBrainsMono NFP';
+  background-color: #343538;
+  color: white;
+  padding: 4px 8px 6px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px inset #4f5055;
+  border-bottom: 2px inset #4f5055;
+  border-radius: 4px;
+  font-family: "JetBrainsMono NFP";
 }
 
 .whkd-popup .keybind-button.special {
-    background-color: #343538;
+  background-color: #343538;
 }
 
 .whkd-popup .keybind-row:hover {
-    background-color: rgba(136, 138, 155, 0.2);
-    border-radius: 8px;
+  background-color: rgba(136, 138, 155, 0.2);
+  border-radius: 8px;
 }
 
 .whkd-popup .plus-separator {
-    padding: 0 0px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: transparent;
+  padding: 0 0px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
 }
 
 /* Filter input styling */
 .whkd-popup .filter-input {
-    padding: 0 8px 2px 8px;
-    font-size: 14px;
-    font-family: 'Segoe UI', sans-serif;
-    border: 1px solid #2e2e2e;
-    border-radius: 4px;
-    outline: none;
-    color: white;
-    background-color: #2e2e2e;
-    min-height: 32px;
+  padding: 0 8px 2px 8px;
+  font-size: 14px;
+  font-family: "Segoe UI", sans-serif;
+  border: 1px solid #2e2e2e;
+  border-radius: 4px;
+  outline: none;
+  color: white;
+  background-color: #2e2e2e;
+  min-height: 32px;
 }
 
 .whkd-popup .filter-input:focus {
-    border: 1px solid #0078D4;
+  border: 1px solid #0078d4;
 }
 
 /* Keybind display elements */
 .whkd-popup .keybind-command {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .whkd-popup .keybind-header {
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    padding: 8px 0;
-    margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  padding: 8px 0;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
 }
