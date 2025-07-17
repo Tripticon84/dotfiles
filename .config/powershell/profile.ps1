@@ -215,6 +215,19 @@ function uptime {
     Write-Host ($result -join ", ")
 }
 
+# Run the Vencord Installer cli
+function vencord {
+	$url = "https://github.com/Vencord/Installer/releases/latest/download/VencordInstallerCli.exe"
+	$output = "$env:TEMP\vencordcli.exe"
+
+    if (-not (Test-Path $output)) {
+	    Invoke-WebRequest -Uri $url -OutFile $output
+    }
+
+	#Start-Process -FilePath $output
+	& $output
+}
+
 # Reload PowerShell profile
 function reload-profile {
     & $profile
@@ -404,7 +417,7 @@ $PSReadLineOptions = @{
         Error = '#FF6347'  # Tomato (keeping it close to red for visibility)
     }
     PredictionSource = 'HistoryAndPlugin'
-    PredictionViewStyle = 'ListView'
+    PredictionViewStyle = 'InlineView' # or 'ListView'
     BellStyle = 'None'
 }
 Set-PSReadLineOption @PSReadLineOptions
@@ -519,7 +532,10 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock $scriptblock
 #------------------------------------------------------------------------------
 
 # Initialize Oh My Posh prompt theme
-oh-my-posh init pwsh | Invoke-Expression
+# oh-my-posh init pwsh | Invoke-Expression
+
+# Initialize Starship prompt theme
+Invoke-Expression (&starship init powershell)
 
 #------------------------------------------------------------------------------
 # Zoxide Integration (Smart Directory Navigation)
