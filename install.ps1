@@ -320,14 +320,6 @@ Write-Host "Creating symbolic link for .config..." -ForegroundColor Blue
 New-Item -Path "$HOME\.config" -ItemType SymbolicLink -Value "$HOME\.dotfiles\.config" -Force
 
 #=====================================
-# FONTS INSTALLATION
-#=====================================
-
-Write-Host "Installing Nerd Fonts..." -ForegroundColor Blue
-Install-NerdFonts -FontName "CascadiaCode" -FontDisplayName "CaskaydiaCove NF"
-Install-NerdFonts -FontName "JetBrainsMono" -FontDisplayName "JetBrainsMono NF"
-
-#=====================================
 # POWERSHELL MODULES INSTALLATION
 #=====================================
 
@@ -485,6 +477,35 @@ if (-not (Get-Command yasb -ErrorAction SilentlyContinue)) {
 # Reload path for newly installed tools
 Write-Host "Reloading PATH environment variable..." -ForegroundColor Yellow
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "User") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "Machine")
+
+#=====================================
+# FONTS INSTALLATION
+#=====================================
+
+Write-Host "Installing Nerd Fonts..." -ForegroundColor Blue
+# Install-NerdFonts -FontName "CascadiaCode" -FontDisplayName "CaskaydiaCove NF"
+# Install-NerdFonts -FontName "JetBrainsMono" -FontDisplayName "JetBrainsMono NF"
+# Install-NerdFonts -FontName "FiraCode" -FontDisplayName "FiraCode NF"
+
+# Using oh-my-posh to install fonts
+
+# Cascadia Code NF
+try {
+    Write-Host "Installing Cascadia Code NF font..." -ForegroundColor Yellow
+    oh-my-posh font install "CascadiaCode"
+    Write-Host "Cascadia Code NF font installed successfully." -ForegroundColor Green
+} catch {
+    Write-Warning "Failed to install Cascadia Code NF font: $_"
+}
+
+# Fira Code NF
+try {
+    Write-Host "Installing Fira Code NF font..." -ForegroundColor Yellow
+    oh-my-posh font install "FiraCode"
+    Write-Host "Fira Code NF font installed successfully." -ForegroundColor Green
+} catch {
+    Write-Warning "Failed to install Fira Code NF font: $_"
+}
 
 #=====================================
 # AUTOSTART CONFIGURATION
