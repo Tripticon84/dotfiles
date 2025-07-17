@@ -47,6 +47,7 @@ This dotfiles repository contains my personal Windows environment configuration,
 ### Terminal Enhancement
 
 - [**Oh-My-Posh**](https://ohmyposh.dev/) - Prompt theme engine for any shell
+- [**Starship**](https://starship.rs/) - Minimal and customizable prompt
 - [**Terminal Icons**](https://github.com/devblackops/Terminal-Icons) - Folder and file icons in the terminal
 - [**PSReadLine**](https://learn.microsoft.com/powershell/module/psreadline) - Command line editing experience
 - [**Zoxide**](https://github.com/ajeetdsouza/zoxide) - Smarter cd command inspired by z and autojump
