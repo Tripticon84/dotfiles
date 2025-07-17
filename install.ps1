@@ -408,6 +408,19 @@ try {
     Write-Error "Failed to install Oh-My-Posh: $_"
 }
 
+# Install Starship
+try {
+    if (-not (Get-Command starship -ErrorAction SilentlyContinue)) {
+        Write-Host "Installing Starship..." -ForegroundColor Yellow
+        winget install -e --accept-source-agreements --accept-package-agreements Starship.Starship
+        Write-Host "Starship installed successfully." -ForegroundColor Green
+    } else {
+        Write-Host "Starship already installed." -ForegroundColor Gray
+    }
+} catch {
+    Write-Error "Failed to install Starship: $_"
+}
+
 # Install Winfetch script
 if (-not (Get-Command winfetch -ErrorAction SilentlyContinue)) {
     try {
