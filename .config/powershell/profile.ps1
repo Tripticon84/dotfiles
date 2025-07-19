@@ -277,14 +277,26 @@ function stop-komorebi {
     komorebic stop --whkd
 }
 
-# Short aliases for Komorebi
-function startk {
-    komorebic start --whkd
+Set-Alias -Name startk -Value start-komorebi
+Set-Alias -Name stopk -Value stop-komorebi
+
+# Start Yasb
+function start-yasb {
+    Start-Process yasb.exe
 }
 
-function stopk {
-    komorebic stop --whkd
+# Stop Yasb
+function stop-yasb {
+    try {
+        Stop-Process -Name "yasb" -Force
+        Write-Host "Yasb process stopped successfully." -ForegroundColor Green
+    } catch {
+        Write-Host "Failed to stop Yasb process or it was not running." -ForegroundColor Yellow
+    }
 }
+
+Set-Alias -Name starty -Value start-yasb
+Set-Alias -Name stopy -Value stop-yasb
 
 #------------------------------------------------------------------------------
 # Unix-like Command Implementations
