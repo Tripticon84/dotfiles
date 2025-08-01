@@ -281,14 +281,6 @@ if ((Get-PSRepository -Name PSGallery).InstallationPolicy -ne 'Trusted') {
 
 Write-Host "Setting up dotfiles repository..." -ForegroundColor Blue
 
-# Create .config directory if it doesn't exist
-if (-not (Test-Path -Path "$HOME\.config")) {
-    Write-Host "Creating .config directory..." -ForegroundColor Yellow
-    New-Item -Path "$HOME\.config" -ItemType Directory -Force | Out-Null
-} else {
-    Write-Host ".config directory already exists." -ForegroundColor Gray
-}
-
 # Clone or update dotfiles repository
 $repoUrl = "https://github.com/Tripticon84/dotfiles.git"
 $dotfilesPath = "$HOME\.dotfiles"
@@ -303,10 +295,11 @@ if (-not (Test-Path -Path $dotfilesPath)) {
     Pop-Location
 }
 
-# Copy existing config (if needed)
+# Backup existing .config folder (if needed)
 if (Test-Path "$HOME\.config") {
-    Write-Host "Copying existing .config to dotfiles..." -ForegroundColor Yellow
-    Copy-Item -Path "$HOME\.config\*" -Destination "$HOME\.dotfiles\.config" -Recurse
+    $backupConfigPath = "$HOME\.config.bak"
+    Write-Host "Backing up existing .config to $backupConfigPath..." -ForegroundColor Yellow
+    Copy-Item -Path "$HOME\.config" -Destination $backupConfigPath -Recurse -Force
 }
 
 # Remove the old config folder
@@ -496,28 +489,51 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "User") + ";" +
 #=====================================
 
 Write-Host "Installing Nerd Fonts..." -ForegroundColor Blue
-# Install-NerdFonts -FontName "CascadiaCode" -FontDisplayName "CaskaydiaCove NF"
-# Install-NerdFonts -FontName "JetBrainsMono" -FontDisplayName "JetBrainsMono NF"
-# Install-NerdFonts -FontName "FiraCode" -FontDisplayName "FiraCode NF"
 
-# Using oh-my-posh to install fonts
-
-# Cascadia Code NF
+# Try oh-my-posh first, fallback to custom function if it fails
 try {
-    Write-Host "Installing Cascadia Code NF font..." -ForegroundColor Yellow
+    Write-Host "Installing Cascadia Code NF font with oh-my-posh..." -ForegroundColor Yellow
     oh-my-posh font install "CascadiaCode"
     Write-Host "Cascadia Code NF font installed successfully." -ForegroundColor Green
 } catch {
-    Write-Warning "Failed to install Cascadia Code NF font: $_"
+    Write-Warning "oh-my-posh installation failed for Cascadia Code NF: $_"
+    # Fallback to custom function
+    try {
+        Write-Host "Attempting fallback installation with custom function..." -ForegroundColor Yellow
+        Install-NerdFonts -FontName "CascadiaCode" -FontDisplayName "CaskaydiaCove NF"
+    } catch {
+        Write-Warning "Fallback installation also failed for Cascadia Code NF: $_"
+    }
 }
 
-# Fira Code NF
 try {
-    Write-Host "Installing Fira Code NF font..." -ForegroundColor Yellow
+    Write-Host "Installing Fira Code NF font with oh-my-posh..." -ForegroundColor Yellow
     oh-my-posh font install "FiraCode"
     Write-Host "Fira Code NF font installed successfully." -ForegroundColor Green
 } catch {
-    Write-Warning "Failed to install Fira Code NF font: $_"
+    Write-Warning "oh-my-posh installation failed for Fira Code NF: $_"
+    # Fallback to custom function
+    try {
+        Write-Host "Attempting fallback installation with custom function..." -ForegroundColor Yellow
+        Install-NerdFonts -FontName "FiraCode" -FontDisplayName "FiraCode NF"
+    } catch {
+        Write-Warning "Fallback installation also failed for Fira Code NF: $_"
+    }
+}
+
+try {
+    Write-Host "Installing JetBrains Mono NF font with oh-my-posh..." -ForegroundColor Yellow
+    oh-my-posh font install "JetBrainsMono"
+    Write-Host "JetBrains Mono NF font installed successfully." -ForegroundColor Green
+} catch {
+    Write-Warning "oh-my-posh installation failed for JetBrains Mono NF: $_"
+    # Fallback to custom function
+    try {
+        Write-Host "Attempting fallback installation with custom function..." -ForegroundColor Yellow
+        Install-NerdFonts -FontName "JetBrainsMono" -FontDisplayName "JetBrainsMono NF"
+    } catch {
+        Write-Warning "Fallback installation also failed for JetBrains Mono NF: $_"
+    }
 }
 
 #=====================================
