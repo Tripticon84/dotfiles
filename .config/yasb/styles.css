@@ -66,7 +66,7 @@
 
 .komorebi-workspaces .widget-container {
   background-color: rgba(188, 195, 207, 0.178);
-  margin: 4px 0;
+  margin: 5px 0;
   border-radius: 12px;
 }
 
@@ -76,6 +76,7 @@
   margin: 0 8px 0 8px;
   color: #95a0ad;
   padding: 0;
+  border: none;
 }
 
 .komorebi-workspaces .ws-btn.populated {
