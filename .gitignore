@@ -4,3 +4,5 @@
 thumbs.db
 *.log
 tmp-*/
+
+.config/micro/buffers/history
