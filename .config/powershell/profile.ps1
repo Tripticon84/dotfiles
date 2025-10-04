@@ -224,8 +224,19 @@ function vencord {
 	    Invoke-WebRequest -Uri $url -OutFile $output
     }
 
-	#Start-Process -FilePath $output
 	& $output
+}
+
+# Run rufus
+function rufus {
+    $url = "https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11.exe"
+    $output = "$env:TEMP\rufus-4.11.exe"
+
+    if (-not (Test-Path $output)) {
+        Invoke-WebRequest -Uri $url -OutFile $output
+    }
+
+    & $output
 }
 
 # Reload PowerShell profile
